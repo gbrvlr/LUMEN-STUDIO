@@ -176,7 +176,7 @@ function start() {
         gsap.from('.w', { opacity: .05, y: 40, filter: 'blur(10px)', stagger: .12, scrollTrigger: { trigger: '.mani', start: 'top 70%', end: 'bottom 70%', scrub: true } });
         gsap.from('#fb', { scale: 1.3, scrollTrigger: { trigger: '.full', start: 'top bottom', end: 'bottom top', scrub: true } });
         // horizontal pinned
-        ScrollTrigger.matchMedia ? .call;
+        ScrollTrigger.matchMedia ?.call;
         const dist = () => tr.scrollWidth - innerWidth;
         gsap.to(tr, { x: () => -dist(), ease: 'none', scrollTrigger: { trigger: '.hs', start: 'top top', end: () => '+=' + dist(), pin: true, scrub: 1, invalidateOnRefresh: true } });
         document.querySelectorAll('.pj .im').forEach(el => gsap.from(el, { clipPath: 'inset(0 0 100% 0)', duration: 1.4, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 90%' } }));
